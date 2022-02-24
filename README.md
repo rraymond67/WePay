@@ -138,6 +138,8 @@ src
 
 - _Pop up Alert to let user know the new item has been succesfully posted,_
 - _Limited amounts of bids. You can only bid 3 times on the same perticulat item._
+- _Pop up alert when item has been deleted and edited_
+- _Pop up alert when the user place a bid_
 
 
 
