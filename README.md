@@ -126,7 +126,7 @@ src
 ### Server (Back End)
 
 #### ERD Model
-![Imgur](https://i.imgur.com/jilKpuS.png)
+![Imgur](https://i.imgur.com/JxqAFVJ.png)
 
 <br>
 
