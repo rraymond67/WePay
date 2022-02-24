@@ -83,7 +83,21 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Login.jsx
+      |__ Navbar.jsx
+      |__ UserCreate.jsx
+      |__ Item.jsx
+      |__ ItemDetails.jsx
+      |__ ItemEdit.jsx
+      |__ ItemCreate.jsx
+      |__ Bid.jsx
+      |__ BidCreate.jsx
+      |__ BidEdit.jsx
+      |__ BidDelete.jsx
+      |__ Container/
+        |__ ItemContainer.jsx
+        |__ BidContanier.jsx
+      
 |__ services/
 
 ```
