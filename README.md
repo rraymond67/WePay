@@ -65,7 +65,7 @@ _**WePay** is a web application for online commerce. Its a place where you post 
 ### Client (Front End)
 
 #### Wireframes
-![webimage](https://i.imgur.com/QmhDjVv.png)
+![webimage](https://i.imgur.com/zQFePom.png)
 
 
 #### Component Tree
