@@ -19,7 +19,7 @@
 
 ## Overview
 
-_**WePay** is a web application for online commerce. Its a place where you post items for sale and other users will be able to place bids. In order to place bids or post an item you must sign up. This application will be similar to Ebay. The highest bider will be move to the top of the list. Once the owner of the item is satisfy with the bidding price. The item will be sold. 
+_**WePay** is a web application for online commerce. Its a place where you post items for sale and other users will be able to place bids. In order to place bids or post an item you must sign up. This application will be similar to Ebay. The search bar will help users filter through the long list of items for sale. Once they find the items they are interest in, they click on it and it will navigate them to the details page whee they eill see the item's description and the list of bidders. The highest bider will be move to the top of the list. Once the owner of the item is satisfy with the bidding price. The item will be sold. Users who are not sign in will still be able to navigate the website but they wont be able to place bids or post items for sale. 
 
 <br>
 
@@ -29,9 +29,9 @@ _**WePay** is a web application for online commerce. Its a place where you post 
 - _3 tables (USER, ITEM, BIDS)._
 - _User Authentication._
 - _Highest bid will move up the bidding list._
-- _Search bar
+- _Search bar_
 - _Full CRUD on item_
-- _Full CRUD on Bids
+- _Full CRUD on Bids_
 
 <br>
 
