@@ -107,19 +107,20 @@ src
 
 | Task                                                  | Priority | Estimated Time | Actual Time |
 | ----------------------------------------------------- | :------: | :------------: | :----------:|
-| JS setup,                               |    M     |      1hr       |     1hr     |
-| Setting up API and GET axios function                 |    H     |      4hrs      |     3hrs    |   
-| Response data setup/fetching                          |    H     |      2hrs      |     2hrs    |  
-| Filter through the response data                      |    H     |      3hrs      |     4hrs    |
-| Set up components files                               |    H     |      3hrs      |     4hrs    |
-| Incorporating the user input and API call             |    H     |      4hrs      |     4hrs    |
-| Debugging of the user input/API call                  |    H     |      2hrs      |     4hrs    |
-| Web page layout                                       |    H     |      3hrs      |     4hrs    |
-| CSS styling of applicants's info                      |    M     |      6hrs      |     8hrs    |
-| CSS styling for Componenets                           |    L     |      3hrs      |     6hrs    |        
-| Create an interactive serch botton                    |    L     |      3hrs      |     2hrs    |
-| Implements Post MVPs/ Clean up                        |    L     |      4hrs      |     2hrs    |
-| Total                                                 |    H     |      38rs      |     44hrs   | 
+| Repo setup / Readme,                                  |    M     |      4hrs      |         |
+| Create backend/ Ruby on rails set up                  |    H     |      2hrs      |      |   
+| Creating Database/ Tables and columns / Seed Data     |    H     |      1hrs      |     |  
+| Model routes and controllers                          |    H     |      4hrs      |       |
+| testing backend with Postman                          |    H     |      1hrs      |     |
+| Create Front End/ React                               |    H     |      3hrs      |      |
+| Setting up Api services                               |    H     |      1hrs      |       |
+| Create Componenets                                    |    H     |      8hrs      |      |
+| Make axios calls from the Service Api                 |    M     |      3hrs      |       |
+| Test Routes in the front End                          |    H     |      4hrs      |       |
+| Tailswind styling                                     |    H     |      10hrs     |        |        
+| Post MVPS                                             |    L     |      4hrs      |       |
+| Clean up                                              |    L     |      5hrs      |     |
+| Total                                                 |    H     |      50rs      |     44hrs   | 
 <br>
 
 ### Server (Back End)
