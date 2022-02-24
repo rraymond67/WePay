@@ -120,7 +120,7 @@ src
 | Tailswind styling                                     |    H     |      10hrs     |        |        
 | Post MVPS                                             |    L     |      4hrs      |       |
 | Clean up                                              |    L     |      5hrs      |     |
-| Total                                                 |    H     |      50rs      |     44hrs   | 
+| Total                                                 |    H     |      50rs      |     | 
 <br>
 
 ### Server (Back End)
