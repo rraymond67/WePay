@@ -126,10 +126,8 @@ src
 ### Server (Back End)
 
 #### ERD Model
+![Imgur](https://i.imgur.com/jilKpuS.png)
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ***
