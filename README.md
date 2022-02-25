@@ -19,7 +19,7 @@
 
 ## Overview
 
-_**WePay** is a web application for online commerce. Its a place where you post items for sale and other users will be able to place bids. In order to place bids or post an item you must sign up. This application will be similar to Ebay. The highest bider will be move to the top of the list. Once the owner of the item is satisfy with the bidding price. The item will be sold. 
+_**WePay** is a web application for online commerce. Its a place where you post items for sale and other users will be able to place bids. In order to place bids or post an item you must sign up. This application will be similar to Ebay. The search bar will help users filter through the long list of items for sale. Once they find the items they are interest in, they click on it and it will navigate them to the details page whee they eill see the item's description and the list of bidders. The highest bider will be move to the top of the list. Once the owner of the item is satisfy with the bidding price. The item will be sold. Users who are not sign in will still be able to navigate the website but they wont be able to place bids or post items for sale. 
 
 <br>
 
@@ -29,9 +29,9 @@ _**WePay** is a web application for online commerce. Its a place where you post 
 - _3 tables (USER, ITEM, BIDS)._
 - _User Authentication._
 - _Highest bid will move up the bidding list._
-- _Search bar
+- _Search bar_
 - _Full CRUD on item_
-- _Full CRUD on Bids
+- _Full CRUD on Bids_
 
 <br>
 
@@ -65,17 +65,14 @@ _**WePay** is a web application for online commerce. Its a place where you post 
 ### Client (Front End)
 
 #### Wireframes
+![webimage](https://i.imgur.com/zQFePom.png)
 
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![webpage](https://i.imgur.com/N1VDkRM.png)
 
 #### Component Architecture
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -86,7 +83,21 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Login.jsx
+      |__ Navbar.jsx
+      |__ UserCreate.jsx
+      |__ Item.jsx
+      |__ ItemDetails.jsx
+      |__ ItemEdit.jsx
+      |__ ItemCreate.jsx
+      |__ Bid.jsx
+      |__ BidCreate.jsx
+      |__ BidEdit.jsx
+      |__ BidDelete.jsx
+      |__ Container/
+        |__ ItemContainer.jsx
+        |__ BidContanier.jsx
+      
 |__ services/
 
 ```
@@ -96,28 +107,27 @@ src
 
 | Task                                                  | Priority | Estimated Time | Actual Time |
 | ----------------------------------------------------- | :------: | :------------: | :----------:|
-| JS setup,                               |    M     |      1hr       |     1hr     |
-| Setting up API and GET axios function                 |    H     |      4hrs      |     3hrs    |   
-| Response data setup/fetching                          |    H     |      2hrs      |     2hrs    |  
-| Filter through the response data                      |    H     |      3hrs      |     4hrs    |
-| Set up components files                               |    H     |      3hrs      |     4hrs    |
-| Incorporating the user input and API call             |    H     |      4hrs      |     4hrs    |
-| Debugging of the user input/API call                  |    H     |      2hrs      |     4hrs    |
-| Web page layout                                       |    H     |      3hrs      |     4hrs    |
-| CSS styling of applicants's info                      |    M     |      6hrs      |     8hrs    |
-| CSS styling for Componenets                           |    L     |      3hrs      |     6hrs    |        
-| Create an interactive serch botton                    |    L     |      3hrs      |     2hrs    |
-| Implements Post MVPs/ Clean up                        |    L     |      4hrs      |     2hrs    |
-| Total                                                 |    H     |      38rs      |     44hrs   | 
+| Repo setup / Readme,                                  |    M     |      4hrs      |         |
+| Create backend/ Ruby on rails set up                  |    H     |      2hrs      |      |   
+| Creating Database/ Tables and columns / Seed Data     |    H     |      1hrs      |     |  
+| Model routes and controllers                          |    H     |      4hrs      |       |
+| testing backend with Postman                          |    H     |      1hrs      |     |
+| Create Front End/ React                               |    H     |      3hrs      |      |
+| Setting up Api services                               |    H     |      1hrs      |       |
+| Create Componenets                                    |    H     |      8hrs      |      |
+| Make axios calls from the Service Api                 |    M     |      3hrs      |       |
+| Test Routes in the front End                          |    H     |      4hrs      |       |
+| Tailswind styling                                     |    H     |      10hrs     |        |        
+| Post MVPS                                             |    L     |      4hrs      |       |
+| Clean up                                              |    L     |      5hrs      |     |
+| Total                                                 |    H     |      50rs      |     | 
 <br>
 
 ### Server (Back End)
 
 #### ERD Model
+![Imgur](https://i.imgur.com/JxqAFVJ.png)
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ***
@@ -126,6 +136,8 @@ src
 
 - _Pop up Alert to let user know the new item has been succesfully posted,_
 - _Limited amounts of bids. You can only bid 3 times on the same perticulat item._
+- _Pop up alert when item has been deleted and edited_
+- _Pop up alert when the user place a bid_
 
 
 
