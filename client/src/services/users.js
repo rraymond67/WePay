@@ -24,4 +24,11 @@ export const verifyUser = async () => {
   return false
 }
 
-export const 
+export const getAllUsers = async () => {
+  const resp = await api.get('/users')
+  return resp.data
+}
+
+export const getOneUser = async () => {
+  
+}
