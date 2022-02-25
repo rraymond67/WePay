@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  # protect_from_forgery with: :null_session
   SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
 
   def encode(payload, exp = 24.hours.from_now)
@@ -7,7 +8,7 @@ class ApplicationController < ActionController::API
   end
 
   def decode(token)
-    decoded = JWT.decode(tokemn, SECRET_KEY)[0]
+    decoded = JWT.decode(token, SECRET_KEY)[0]
     HashWithIndifferentAccess.new decoded
   end
 
@@ -17,11 +18,12 @@ class ApplicationController < ActionController::API
     begin
       @payload = decode(token)
       @current_user = User.find(@payload[:id])
+      puts @current_user
     rescue ActiveRecord::RecordNotFound => e
       render json: { errors: e.message }, status: :unauthorized
     rescue JWT::DecodeError => e
       render json: { errors: e.message }, status: :unauthorized
     end
   end
-  
+
 end
