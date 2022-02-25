@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::API
-  # protect_from_forgery with: :null_session
   SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
 
   def encode(payload, exp = 24.hours.from_now)
@@ -14,16 +13,15 @@ class ApplicationController < ActionController::API
 
   def authorize_request
     header = request.headers['Authorization']
-    token = header.split('').last if header
+    token = header.split(' ').last if header
     begin
       @payload = decode(token)
       @current_user = User.find(@payload[:id])
-      puts @current_user
     rescue ActiveRecord::RecordNotFound => e
       render json: { errors: e.message }, status: :unauthorized
     rescue JWT::DecodeError => e
       render json: { errors: e.message }, status: :unauthorized
     end
   end
-
+  
 end
