@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <div>
-      <h1>WePay</h1>
+      <Link to='/'>WePay</Link>
       {props.currentUser ?
         <>
           <h3>Welcome, {props.currentUser.username}!</h3>
@@ -13,10 +13,10 @@ export default function Navbar(props) {
         :
         <>
           <Link to='/login'>Login</Link>
-          <Link to='/register'>Register</Link>
+          <Link to='/register'>Sign up</Link>
         </>
       }
-      <Link to='/products'>Products</Link>
+      <Link to='/items'>Items</Link>
     </div>
   )
 }
