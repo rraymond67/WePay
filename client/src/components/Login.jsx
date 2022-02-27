@@ -13,8 +13,12 @@ export default function Login(props) {
       e.preventDefault()
       const user = { username, password }
       const resp = await loginUser(user)
-    }}>
 
+      navigate('/')
+    }}>
+      <input type='text' value={username} onChange={ (e)=> setUsername(e.target.value)}/>
+      <input type='password' value={password} onChange={(e) => setUsername(e.target.value)} />
+      <button>Login</button>
     </form>
 
 
