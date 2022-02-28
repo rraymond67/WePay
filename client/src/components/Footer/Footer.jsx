@@ -6,7 +6,7 @@ export default function Footer() {
     <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="https://flowbite.com" target="_blank" class="flex items-center mb-4 sm:mb-0">
-          <img src={logo} class="mr-4 h-8" alt="Flowbite Logo" />
+          <img src={logo} class="mr-4 h-8" alt="We pay Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">WePay</span>
         </a>
         <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
