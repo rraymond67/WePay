@@ -14,23 +14,23 @@ export default function ItemCreate(props) {
     }}>
       <input
         type='text'
-        onChange={(e) => setTitle(e.target.value)}
         value={title}
+        onChange={(e) => setTitle(e.target.value)}
       />
       <input
         type='number'
-        onChange={(e) => setPrice(e.target.valueAsNumber)}
         value={price}
+        onChange={(e) => setPrice(e.target.valueAsNumber)}
       />
       <input
         type='text'
-        onChange={(e) => setDescription(e.target.value)}
         value={description}
+        onChange={(e) => setDescription(e.target.value)}
       />
       <input
         type='text'
-        onChange={(e) => setImg_url(e.target.value)}
         value={img_url}
+        onChange={(e) => setImg_url(e.target.value)}
       />
       <button>Create</button>
     </form>
