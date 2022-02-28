@@ -1,5 +1,6 @@
 import { getAllItems, createItem, updateItem, deleteItem } from "../services/items";
 import { useEffect, useState } from "react";
+import {Route, Routes, useNavigate } from 'react-router-dom'
 import Items from "./Items";
 import ItemCreate from "./ItemCreate";
 import ItemDetail from "./ItemDetail";
@@ -16,7 +17,7 @@ export default function ItemsContainer(props) {
       setItems(items)
     }
     fetchItems()
-  }, toggle)
+  },[toggle])
 
   const handleDelete = async (id) => {
     await deleteItem(id)

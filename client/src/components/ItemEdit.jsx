@@ -22,8 +22,8 @@ export default function ItemEdit(props) {
   return (
     <form onSubmit={(e) => {
       e.preventDefault()
-      const product = { title, price, description, img_url }
-      props.handleEdit(id, product)
+      const item = { title, price, description, img_url }
+      props.handleEdit(id, item)
     }}>
       <input
         type='text'
@@ -45,7 +45,7 @@ export default function ItemEdit(props) {
         value={img_url}
         onChange={(e) => setImg_url(e.target.value)}
       />
-      <button>Edit</button>
+      <button>Save</button>
     </form>
   )
 

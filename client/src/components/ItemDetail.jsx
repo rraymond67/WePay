@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getItemBids, createBid, deleteBid } from "../services/bids";
+import Bids from "./Bids";
+import BidCreate from "./BidCreate";
 
 export default function ItemDetail(props) {
   const { id } = useParams()
@@ -17,7 +19,7 @@ export default function ItemDetail(props) {
     }
     fetchBids()
     setItem(fetchItem)
-  }, [id, props.item, toggle])
+  }, [id, props.items, toggle])
 
   const handleBidCreate = async (formData) => {
     await createBid(id, formData)
@@ -33,7 +35,7 @@ export default function ItemDetail(props) {
       {
         item?.id ? 
           <>
-            <img src={item.img_url} />
+            <img src={item.img_url} alt={item.title}/>
             <h2>{item.title}</h2>
             <h3>$ {item.price}</h3>
             <p>{item.description}</p>
