@@ -4,7 +4,7 @@ class BidsController < ApplicationController
 
   # GET /bids
   def index
-    @items = Item.find(params[:item_id])
+    @item = Item.find(params[:item_id])
     @bids = @item.bids
 
     render json: @bids, include: :user
