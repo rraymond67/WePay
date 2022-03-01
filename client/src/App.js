@@ -26,7 +26,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Navbar currentUser={currentUser} logout={logout}/>
+      <Navbar setCurrentUser={setCurrentUser} currentUser={currentUser} logout={logout}/>
       <Routes>
         <Route path='/' element={<h1>HELLO!!</h1>} />
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
