@@ -2,7 +2,7 @@ import React from 'react'
 import Wepay from '../images/wepay.jpeg'
 import { Link } from 'react-router-dom'
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="w-full border-blue-700">
     <div className="flex flex-wrap items-center px-20 py-20 md:flex-nowrap">
@@ -15,6 +15,7 @@ export default function Home() {
           <Link to="/items">BUY</Link>
         </button>
           <button to="/items" class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">
+            {props.currentUser}
             <Link to="/items">SELL</Link>
           </button>
         </div>
