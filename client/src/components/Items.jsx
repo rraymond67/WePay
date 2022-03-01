@@ -1,8 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Search from "./Search/Search";
 
 export default function Items(props) {
+
+  const handleSearch = (e) => {
+    const results = props.items.filter((item) =>
+      item.title.toLowerCase().includes(e.target.value.toLowerCase())
+    )
+    setSearchResult(results)
+    setApplySort(true)
+  }
   return (
     <div class=" bg-gradient-to-t from-gray-100 to-gray-400">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center mx-5 drop-shadow-2xl m-2">
