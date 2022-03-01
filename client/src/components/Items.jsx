@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Items(props) {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-teal-200 to-teal-500">
       { props.currentUser &&
         <Link to='/items/create'>List an Item!</Link>
       }
