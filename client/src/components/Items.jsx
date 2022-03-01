@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 export default function Items(props) {
   return (
     <div>
+      { props.currentUser &&
+        <Link to='/items/create'>List an Item!</Link>
+      }
       {props.items.map(item => (
         <Link key={item.id} to={`/items/${item.id}`}>
           <h4>{item.title}</h4>

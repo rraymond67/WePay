@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import ItemsContainer from './components/ItemsContainer';
 import { verifyUser } from './services/users';
 import Footer from './components/Footer/Footer.jsx';
+import Home from './components/Home';
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
     <div className="App">
       <Navbar setCurrentUser={setCurrentUser} currentUser={currentUser} logout={logout}/>
       <Routes>
-        <Route path='/' element={<h1>HELLO!!</h1>} />
+        <Route path='/' element={<Home currentUser={currentUser}/>} />
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
         <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />
         <Route path='/items/*' element={<ItemsContainer currentUser={currentUser} />} />

@@ -60,8 +60,8 @@ export default function Navbar(props) {
         :
         <div class="container flex flex-wrap justify-between items-center mx-auto">
         <Link to="/" class="flex items-center">
-          <img src={logo} class="mr-0 h-6 sm:h-10" alt="wePay Logo" />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ePay</span>
+          <img src={logo} class="h-6 sm:h-10" alt="wePay Logo" />
+          <span class="self-center text-blue-700 text-xl font-semibold whitespace-nowrap dark:text-white">e<span class="text-green-400">Pay</span></span>
         </Link>
         <div class="flex items-center md:order-2">
           <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" type="button" data-dropdown-toggle="dropdown">
@@ -104,7 +104,7 @@ export default function Navbar(props) {
           </ul>
         </div>
       </div>}
-      <hr class="my-6 border-blue-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> 
+      <hr class="my-2 border-blue-200 sm:mx-auto dark:border-gray-700 lg:my-2" /> 
 </nav>
     )
   }

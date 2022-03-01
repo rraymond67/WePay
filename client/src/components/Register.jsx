@@ -18,7 +18,7 @@ export default function Register(props) {
   }
 
   return (
-    <div class="px-14 bg-slate-200 grid justify-items-center py-24">
+    <div class="px-14 bg-slate-300 grid justify-items-center py-24">
       <form onSubmit={handleRegister} class="w-full max-w-lg">
         <div class="flex flex-wrap -mx-300 mb-20">
           <div class="w-full px-3 mb-6">
