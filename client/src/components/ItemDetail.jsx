@@ -32,16 +32,14 @@ export default function ItemDetail(props) {
 
   return (
     <div>
-      {
-        item?.id ? 
+      {item?.id ? 
           <>
             <img src={item.img_url} alt={item.title}/>
             <h2>{item.title}</h2>
             <h3>$ {item.price} Seller: {item.user_id}</h3>
             <p>{item.description}</p>
             
-            {
-              props.currentUser?.id === item.user_id ?
+            {props.currentUser?.id === item.user_id ?
               <>
                   <Link to={`/items/${item.id}/edit`}>
                     <button>Edit</button>
@@ -49,8 +47,8 @@ export default function ItemDetail(props) {
                 <button onClick={() => props.handleDelete(item.id)}>Delete</button>
               </>
               :
-              null
-            }
+            null}
+          
             <BidCreate handleBidCreate={ handleBidCreate}/>
             <Bids
               currentUser={props.currentUser}
