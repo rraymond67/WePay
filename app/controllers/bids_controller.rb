@@ -12,7 +12,7 @@ class BidsController < ApplicationController
 
   def get_all_bids
     @bids = Bid.all
-    render json: @bidss
+    render json: @bids
   end
 
   # GET /bids/1

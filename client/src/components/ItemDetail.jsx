@@ -37,7 +37,7 @@ export default function ItemDetail(props) {
           <>
             <img src={item.img_url} alt={item.title}/>
             <h2>{item.title}</h2>
-            <h3>$ {item.price}</h3>
+            <h3>$ {item.price} Seller: {item.user_id}</h3>
             <p>{item.description}</p>
             
             {
@@ -51,7 +51,7 @@ export default function ItemDetail(props) {
               :
               null
             }
-            <BidCreate handleReviewCreate={ handleBidCreate}/>
+            <BidCreate handleBidCreate={ handleBidCreate}/>
             <Bids
               currentUser={props.currentUser}
               bids={bids}
