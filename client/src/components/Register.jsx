@@ -9,19 +9,30 @@ export default function Register(props) {
 
   const navigate = useNavigate()
 
-  return (
-    <form onSubmit={async (e) => {
-      e.preventDefault()
-      const user = { username, email, password }
-      const resp = await registerUser(user)
-      props.setCurrentUser(resp)
-      navigate('/')
+  const handleRegister = async (e) => {
+    e.preventDefault()
+    const user = { username, email, password }
+    const resp = await registerUser(user)
+    props.setCurrentUser(resp)
+    navigate('/')
+  }
 
-    }}>
-      <input type='text' onChange={(e) => setUsername(e.target.value) } value={username} />
-      <input type='text' onChange={(e) => setEmail(e.target.value) } value={email} />
-      <input type='password' onChange={ (e) => setPassword(e.target.value)} value={password} />
-      <button>Sign Up</button>
-    </form>
+  return (
+    <div class="px-14 bg-slate-200 grid justify-items-center py-24">
+      <form onSubmit={handleRegister} class="w-full max-w-lg">
+        <div class="flex flex-wrap -mx-300 mb-20">
+          <div class="w-full px-3 mb-6">
+            <input type='text'onChange={(e) => setUsername(e.target.value)} value={username} placeholder="username" />
+          </div>
+          <div class="w-full px-3 mb-6">
+            <input type='text' onChange={(e) => setEmail(e.target.value)} value={email} placeholder="email" />
+          </div>
+          <div class="w-full px-3 mb-6">
+            <input type='password' onChange={(e) => setPassword(e.target.value)} value={password} placeholder="password" />
+          </div>
+      </div>
+      <button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">Sign Up</button>
+      </form>
+      </div>
   )
 }
