@@ -19,34 +19,45 @@ export default function ItemEdit(props) {
     }
   }, [id, props.items])
 
+  const handleEdit = async (e) => {
+    e.preventDefault()
+    const item = { title, price, description, img_url }
+    props.handleEdit(id, item)
+  }
+
   return (
-    <form onSubmit={(e) => {
-      e.preventDefault()
-      const item = { title, price, description, img_url }
-      props.handleEdit(id, item)
-    }}>
-      <input
-        type='text'
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <input
-        type='text'
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-        />
-      <input
-        type='number'
-        value={price}
-        onChange={(e) => setPrice(e.target.valueAsNumber)}
-      />
-      <input
-        type='text'
-        value={img_url}
-        onChange={(e) => setImg_url(e.target.value)}
-      />
-      <button>Save</button>
-    </form>
+    <div class="px-14 bg-slate-300 grid justify-items-center py-24">
+      <h1 class="text-2xl font-bold mb-10"> Edit Item</h1>
+      <form onSubmit={handleEdit} class="w-full max-w-lg">
+        <div class="flex flex-wrap -mx-300 mb-20">
+          <div class="w-full px-3 mb-6">
+            <input
+              type='text'
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}/>
+          </div>
+          <div class="w-full px-3 mb-6">
+            <input
+              type='text'
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}/>
+          </div>
+          <div class="w-full px-3 mb-6">
+            <input
+            type='number'
+            value={price}
+            onChange={(e) => setPrice(e.target.valueAsNumber)}/>
+          </div>
+          <div class="w-full px-3 mb-6">
+            <input
+            type='text'
+            value={img_url}
+            onChange={(e) => setImg_url(e.target.value)}/>
+          </div>
+        </div>
+      <button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">Save</button>
+      </form>
+    </div>
   )
 
 }

@@ -13,7 +13,7 @@ export default function ItemCreate(props) {
   }
   return (
     <div class="px-14 bg-slate-300 grid justify-items-center py-24" >
-      <h1> List Item For Sale</h1>
+      <h1 class="text-2xl font-bold mb-10"> List Item For Sale</h1>
       <form onSubmit={handleCreateItem} class="w-full max-w-lg">
         <div class="flex flex-wrap -mx-300 mb-20"> 
           <div class="w-full px-3 mb-6">
