@@ -27,7 +27,7 @@ function App() {
     localStorage.removeItem('authToken')
     window.location.reload(false);
     setCurrentUser(null)
-    toast('Come back Soon!!')
+    toast("Come Back Soon")
   }
   return (
     <div className="App">
