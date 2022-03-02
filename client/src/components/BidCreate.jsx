@@ -4,7 +4,8 @@ export default function BidCreate(props) {
   const [amount, setAmount] = useState(0)
 
   return (
-    
+    <div>
+      {props.currentUser ?
     <form onSubmit={(e) => {
       e.preventDefault()
       const bid = {amount}
@@ -13,6 +14,11 @@ export default function BidCreate(props) {
       
       <input type='number' value={amount} onChange={(e) => setAmount(e.target.valueAsNumber)} />
       <button>Place bid!</button>
-    </form>
+        </form>
+        :
+        null
+  }
+      
+      </div>
   )
 }
