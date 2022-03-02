@@ -8,7 +8,8 @@ import ItemsContainer from './components/ItemsContainer';
 import { verifyUser } from './services/users';
 import Footer from './components/Footer/Footer.jsx';
 import Home from './components/Home';
-import { ToastContainer} from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
     localStorage.removeItem('authToken')
     window.location.reload(false);
     setCurrentUser(null)
+    toast('Come back Soon!!')
   }
   return (
     <div className="App">
@@ -36,8 +38,8 @@ function App() {
         <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />
         <Route path='/items/*' element={<ItemsContainer logout={logout} currentUser={currentUser} />} />
       </Routes>
-      <ToastContainer/>
       <Footer/>
+      <ToastContainer/>
     </div>
   );
 }

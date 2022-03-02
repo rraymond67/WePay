@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { registerUser } from '../services/users'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
+
 
 export default function Register(props) {
   const [username, setUsername] = useState('')
@@ -14,6 +16,7 @@ export default function Register(props) {
     const user = { username, email, password }
     const resp = await registerUser(user)
     props.setCurrentUser(resp)
+    toast("Congradualtion!!!")
     navigate('/')
   }
 

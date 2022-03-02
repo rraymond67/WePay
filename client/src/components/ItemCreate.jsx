@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function ItemCreate(props) {
   const [title, setTitle] = useState('')
@@ -9,7 +10,8 @@ export default function ItemCreate(props) {
   const handleCreateItem = async (e) => {
     e.preventDefault()
       const item = { title, description, price, img_url }
-      props.handleCreate(item)
+    props.handleCreate(item)
+    toast("Item Created")
   }
   return (
     <div class="px-14 bg-slate-300 grid justify-items-center py-24" >

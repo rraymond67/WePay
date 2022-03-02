@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../services/users";
+import { toast } from "react-toastify";
 
 export default function Login(props) {
   const [username, setUsername] = useState('')
@@ -13,7 +14,7 @@ export default function Login(props) {
     const user = { username, password }
     const resp = await loginUser(user)
     props.setCurrentUser(resp)
-
+    toast("Succesfully Log In")
     navigate('/')
   }
 
