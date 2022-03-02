@@ -52,7 +52,7 @@ export default function ItemDetail(props) {
               :
             null}
           
-            <BidCreate handleBidCreate={ handleBidCreate}/>
+            <BidCreate currentUser={props.currentUser} handleBidCreate={ handleBidCreate}/>
             <Bids
               currentUser={props.currentUser}
               bids={bids}

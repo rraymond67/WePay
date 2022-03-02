@@ -19,10 +19,11 @@ function App() {
       setCurrentUser(user)
     }
     getUser()
-  },[currentUser])
+  },[])
 
   const logout = async () => {
     localStorage.removeItem('authToken')
+    window.location.reload(false);
     setCurrentUser(null)
   }
   return (
