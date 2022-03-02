@@ -16,9 +16,9 @@ export default function Navbar(props) {
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">ePay</span>
           </Link>
           <div class="flex items-center md:order-2">
-            <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" type="button" data-dropdown-toggle="dropdown">
+            <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
               <span class="sr-only">Open user menu</span>
-              <img class="w-8 h-8 rounded-full" src={user} alt="user photo" />
+              <img class="w-8 h-8 rounded-full" src={user} alt="user" />
             </button>
   
             {/* <!-- Dropdown menu --> */}
@@ -68,9 +68,9 @@ export default function Navbar(props) {
           <span class="self-center text-blue-700 text-xl font-semibold whitespace-nowrap dark:text-white">e<span class="text-green-400">Pay</span></span>
         </Link>
         <div class="flex items-center md:order-2">
-          <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" type="button" data-dropdown-toggle="dropdown">
+          <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
             <span class="sr-only">Open user menu</span>
-            <img class="w-8 h-8 rounded-full" src={user} alt="user photo" />
+            <img class="w-8 h-8 rounded-full" src={user} alt="user" />
           </button>
 
           {/* <!-- Dropdown menu --> */}
@@ -113,19 +113,3 @@ export default function Navbar(props) {
     )
   }
   
-{/*   
-  // <div>
-  //  <Link to='/'>WePay</Link>
-  //   {props.currentUser ?
-  //     <>
-  //       <h3>Welcome, {props.currentUser.username}!</h3>
-  //       <button onClick={props.logout}>Log Out</button>
-  //     </>
-  //     :
-  //     <>
-  //       <Link to='/login'>Login</Link>
-  //       <Link to='/register'>Sign up</Link>
-  //     </>
-  //   }
-  //   <Link to='/items'>Items</Link>
-  // </div> */}
