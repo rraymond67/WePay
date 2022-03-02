@@ -33,7 +33,7 @@ function App() {
         <Route path='/' element={<Home currentUser={currentUser}/>} />
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
         <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />
-        <Route path='/items/*' element={<ItemsContainer currentUser={currentUser} />} />
+        <Route path='/items/*' element={<ItemsContainer logout={logout} currentUser={currentUser} />} />
       </Routes>
       <Footer/>
     </div>

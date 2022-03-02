@@ -48,6 +48,7 @@ export default function ItemsContainer(props) {
         } />
         <Route path='/:id' element={
           <ItemDetail
+            logout={props.logout}
             items={items}
             handleDelete={handleDelete}
             currentUser={props.currentUser}
