@@ -16,7 +16,7 @@ export default function Register(props) {
     const user = { username, email, password }
     const resp = await registerUser(user)
     props.setCurrentUser(resp)
-    toast("Congradualtion!!!")
+    toast("Welcome!!!")
     navigate('/')
   }
 
