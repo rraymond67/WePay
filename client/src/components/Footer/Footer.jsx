@@ -2,6 +2,7 @@ import logo from '../../images/logo.png'
 import linked from '../../images/linked.png'
 import github from '../../images/github.png'
 import user from '../../images/user.png'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   
@@ -9,7 +10,7 @@ export default function Footer() {
     <footer  className=" px-2 sm:px-4 py-2.5 bg-gradient-to-t from-blue-800 to-blue-900 text-gray-50">
       <div class="sm:flex sm:items-center sm:justify-between">
         <Link to="/" class="flex items-center mb-4 sm:mb-0">
-          <img src={logo} class="mr-4 h-8" alt="We pay Logo" />
+          <img src={logo} class="mr-4 h-8" alt="Wepay Logo" />
         </Link>
         <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
           <li>
