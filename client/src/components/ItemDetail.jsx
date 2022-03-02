@@ -34,11 +34,14 @@ export default function ItemDetail(props) {
     <div>
       {item?.id ? 
         <>
-          <div className="grid grid-cols-1 justify-items-center drop-shadow-2xl m-2">
-            <img class="scale-75" src={item.img_url} alt={item.title}/>
-            <h2>{item.title}</h2>
-            <h3>$ {item.price} Seller: {item.user_id}</h3>
-            <p>{item.description}</p>
+          <div className="grid grid-cols-1 justify-items-center m-2">
+            <img class="scale-75" src={item.img_url} alt={item.title} />
+            <div class="mr-10 ml-10 grid items-center mt-10 grid-cols-1 border-4 bg-blue-500 pb-10 mb-10">
+            <h2 class="text-2xl underline text-black-900">{item.title}</h2>
+            <h3>Price: $ {item.price}</h3>
+            <p class="mb-10">{item.description}</p>
+            <h3>Seller: {item.user_id}</h3>
+            </div>
           </div>
             
             
