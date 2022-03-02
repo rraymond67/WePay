@@ -33,11 +33,14 @@ export default function ItemDetail(props) {
   return (
     <div>
       {item?.id ? 
-          <>
-            <img src={item.img_url} alt={item.title}/>
+        <>
+          <div className="grid grid-cols-1 justify-items-center drop-shadow-2xl m-2">
+            <img class="scale-75" src={item.img_url} alt={item.title}/>
             <h2>{item.title}</h2>
             <h3>$ {item.price} Seller: {item.user_id}</h3>
             <p>{item.description}</p>
+          </div>
+            
             
             {props.currentUser?.id === item.user_id ?
               <>

@@ -5,7 +5,7 @@ export default function Bids(props) {
     <div>
       {props.bids && 
         props.bids.map(bid => (
-          <div key={bid.id} class="grid items-center mt-10 grid-cols-2 border-4 bg-green-400 pb-10 mb-10">
+          <div key={bid.id} class="mr-10 ml-10 grid items-center mt-10 grid-cols-2 border-4 bg-green-400 pb-10 mb-10">
             <h4 class="text-xl text-black-900">{bid.user.username} is bidding $ {bid.amount} </h4>
 
             {props.currentUser?.id === bid.user_id ?

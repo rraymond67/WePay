@@ -31,7 +31,7 @@ export default function Register(props) {
             <input type='password' onChange={(e) => setPassword(e.target.value)} value={password} placeholder="password" />
           </div>
       </div>
-      <button class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">Sign Up</button>
+      <button class="mb-30 bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline">Sign Up</button>
       </form>
       </div>
   )
